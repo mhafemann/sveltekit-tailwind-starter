@@ -1,7 +1,13 @@
 {
-  "name": "blog",
+  "name": "svelte-tailwindcss-starter",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "author": {
+    "name" : "Mark Hafemann",
+    "email" : "markhafemann1@gmail.com",
+    "url" : "http://markh.dev/"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite dev",
     "dev:host": "vite dev --host",
