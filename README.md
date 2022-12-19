@@ -7,7 +7,7 @@ My personal SvelteKit Tailwindcss starter repo.
 Clone the repo:
 
 ```bash
-npx degit
+npx degit mhafemann/sveltekit-tailwind-starter
 ```
 
 Install dependecies:
