@@ -1,0 +1,71 @@
+/* #region @TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* #endregion */
+
+/* #region BASE */
+@layer base {
+  html {
+    @apply overflow-x-hidden overflow-y-scroll bg-gray-1 text-gray-38;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size-adjust: none;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-variant-alternates: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-language-override: normal;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  html.dark {
+    @apply bg-gray-43 text-white;
+  }
+
+  html,
+  body {
+    @apply h-full w-full;
+  }
+
+  *:focus-visible,
+  *:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  ::selection {
+    @apply bg-blue-15 text-gray-45 dark:text-gray-45;
+    background-clip: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: hsla(223, 14%, 96%, 100%);
+  }
+}
+hr {
+  @apply border-4 border-dashed border-black/10 dark:border-white/10;
+}
+svg {
+  @apply h-6 w-6;
+}
+svg,
+path {
+  stroke-width: 2;
+}
+/* #endregion */
+
+/* #region TYPOGRAPHY */
+h1 {
+  @apply mb-4 font-extrabold leading-none tracking-tight text-gray-3 text-4xl dark:text-white md:text-5xl lg:text-6xl;
+}
+h2 {
+  @apply font-extrabold text-gray-36 text-3xl dark:text-white;
+}
+/* #endregion */
